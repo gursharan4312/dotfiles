@@ -1,5 +1,4 @@
 export ZSH=$HOME/.oh-my-zsh
-echo 'p10k'
 
 TERM=xterm-256color
 ZSH_THEME="powerlevel9k/powerlevel9k"
