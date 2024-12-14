@@ -1,7 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 TERM=xterm-256color
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_MODE='awesome-fontconfig'
 
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
