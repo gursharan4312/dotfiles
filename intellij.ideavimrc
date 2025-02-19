@@ -25,6 +25,7 @@ set nerdtree
 set easymotion
 set notimeout
 set which-key
+set functiontextobj
 
 
 
@@ -60,14 +61,18 @@ map <leader>- <Action>(SplitHorizontally)
 " map <leader>wm <Action>(MoveEditorToOppositeTabGroup)
 
 " File navigation
-map <leader>ff <action>(GotoFile)
-map <leader>fw <action>(FindInPath)
-map <leader>fr <action>(RecentFiles)
-map <leader><leader> <Action>(RecentFiles)
-map <leader>fl <action>(RecentLocations)
-map <leader>fs <action>(NewScratchFile)
+"map <leader>ff <action>(GotoFile)
+"map <leader>fw <action>(FindInPath)
+"map <leader>fr <action>(RecentFiles)
+"map <leader><leader> <Action>(RecentFiles)
+"map <leader>fl <action>(RecentLocations)
+"map <leader>fs <action>(NewScratchFile)
 " Close active tab
 map <leader>q <action>(CloseContent)
+
+map <Leader>ff <action>(com.mituuz.fuzzier.Fuzzier)
+map <Leader>fm <action>(com.mituuz.fuzzier.FuzzyMover)
+map <Leader>fw <action>(com.mituuz.fuzzier.FuzzierVCS)
 
 " Go to code
 nmap <leader>gd <Action>(GotoDeclaration)
@@ -100,4 +105,4 @@ Plug 'tpope/vim-commentary'
 "map <leader>d <Action>(Debug)
 
 "" Map \b to toggle the breakpoint on the current line
-"map \b <Action>(ToggleLineBreakpoint)
+"map \b <Action>(ToggleLineBreakpoint)
